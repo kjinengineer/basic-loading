@@ -27,16 +27,15 @@ export default function Plane({
 
   const planeStyle = {
     ...style,
-    backgroundColor: "#2b3131",
     background: `linear-gradient(to bottom right, ${lightenColor(
       color ?? "#232323",
-      15
+      6
     )}, ${color ?? "#232323"})`,
     width: width,
     height: height,
     borderRadius: borderRadius ?? "10px",
     boxShadow: `inset 2px 2px 8px rgba(255, 255, 255, 0.3),
-        2px 2px 8px rgba(0, 0, 0, 0.2)`,
+        3px 3px 8px rgba(0, 0, 0, 0.1)`,
   };
 
   return (
