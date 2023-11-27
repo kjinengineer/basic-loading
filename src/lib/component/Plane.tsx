@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { lightenColor } from "./util/functions";
+import { lightenColor } from "../util/functions";
 
 type StringObject = {
   [key: string]: string;
