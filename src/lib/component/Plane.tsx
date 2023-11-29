@@ -39,7 +39,7 @@ export default function Plane({
           ? `linear-gradient(to bottom right, ${lightenColor(
               color ?? "#232323",
               6
-            )}, ${color ?? "#232323"})`
+            )}, 7%, ${color ?? "#232323"})`
           : "",
         borderRadius: borderRadius ?? "10px",
         boxShadow: `inset 2px 2px 8px rgba(255, 255, 255, 0.3),

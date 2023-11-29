@@ -1,0 +1,94 @@
+.triangle {
+  margin: 100px;
+  position: relative;
+  filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.1));
+}
+
+/* .triangle::after { */
+/* box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3),
+    3px 3px 8px rgba(0, 0, 0, 0.1); */
+/* }/ */
+
+.tri-1 {
+  position: absolute;
+  background-image: inherit;
+  width: 10em;
+  height: 10em;
+  border-top-right-radius: 30%;
+  background: linear-gradient(to bottom, #909bff, 7%, #818cf8);
+  transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
+  clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 0%);
+  box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3);
+}
+
+.tri-center {
+  position: absolute;
+  background-image: inherit;
+  width: 10em;
+  height: 10em;
+  background: linear-gradient(to bottom right, #909bff, 7%, #818cf8);
+  transform: rotate(0deg) skewX(-30deg) scale(1, 0.866) translate(0%, 50%);
+  clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 0%);
+}
+
+.tri-2 {
+  position: absolute;
+  background: linear-gradient(to top right, #909bff, 0%, #818cf8);
+  width: 10em;
+  height: 10em;
+  border-top-right-radius: 30%;
+  transform: rotate(60deg) skewX(-30deg) scale(1, 0.866) translate(50%, 0%);
+}
+
+.tri-3 {
+  position: absolute;
+  background: linear-gradient(to right, #909bff, 7%, #818cf8);
+  width: 10em;
+  height: 10em;
+  border-bottom-left-radius: 30%;
+  transform: rotate(0deg) skewX(-30deg) scale(1, 0.866) translate(0%, 50%);
+  /* box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3); */
+}
+
+#pool-container {
+  padding: 20px;
+  width: 200px;
+  margin: 0 5px 0 5px;
+  display: flex;
+  flex-direction: column;
+  background: green;
+  position: relative;
+}
+
+#side-step {
+  height: 50px;
+  width: 50px;
+  transition: 1s all;
+}
+#pool-container:hover #side-step {
+  margin-left: 150px;
+}
+#side-step,
+#main-pool {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+#side-step::before,
+#main-pool::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(248, 201, 129, 1) 0%,
+    rgba(227, 76, 145, 1) 100%
+  );
+}
+
+#main-pool {
+  width: 100%;
+  height: 150px;
+}
