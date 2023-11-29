@@ -4,11 +4,6 @@
   filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.1));
 }
 
-/* .triangle::after { */
-/* box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3),
-    3px 3px 8px rgba(0, 0, 0, 0.1); */
-/* }/ */
-
 .tri-1 {
   position: absolute;
   background-image: inherit;
@@ -17,18 +12,7 @@
   border-top-right-radius: 30%;
   background: linear-gradient(to bottom, #909bff, 7%, #818cf8);
   transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
-  clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 0%);
-  box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3);
-}
-
-.tri-center {
-  position: absolute;
-  background-image: inherit;
-  width: 10em;
-  height: 10em;
-  background: linear-gradient(to bottom right, #909bff, 7%, #818cf8);
-  transform: rotate(0deg) skewX(-30deg) scale(1, 0.866) translate(0%, 50%);
-  clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 0%);
+  /* clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 0%); */
 }
 
 .tri-2 {
@@ -46,8 +30,8 @@
   width: 10em;
   height: 10em;
   border-bottom-left-radius: 30%;
+  /* clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 0%); */
   transform: rotate(0deg) skewX(-30deg) scale(1, 0.866) translate(0%, 50%);
-  /* box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3); */
 }
 
 #pool-container {
