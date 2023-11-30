@@ -5,12 +5,12 @@ export default function TestPage() {
   const option = {
     width: "100px",
     height: "100px",
-    color: "#818cf8",
+    // color: "#818cf8",
   };
   return (
     <div>
       <Plane option={option} />
-      <Triangle />
+      <Triangle option={option} />
       {/* <svg
         style={{ visibility: "hidden", position: "absolute" }}
         width="0"
