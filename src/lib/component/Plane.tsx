@@ -1,22 +1,5 @@
-import { ReactNode } from "react";
 import { lightenColor } from "../util/functions";
-
-type StringObject = {
-  [key: string]: string;
-};
-
-interface PropsType {
-  option: {
-    width: string;
-    height: string;
-    borderRadius?: string;
-    color?: string;
-  };
-  className?: string;
-  style?: StringObject;
-  children?: ReactNode;
-  id?: string;
-}
+import { PropsType } from "../util/type";
 
 export default function Plane({
   id,
