@@ -1,22 +1,4 @@
-import { ReactNode } from "react";
-import { lightenColor } from "../util/functions";
-
-type StringObject = {
-  [key: string]: string;
-};
-
-interface PropsType {
-  option: {
-    width: string;
-    height: string;
-    borderRadius?: string;
-    color?: string;
-  };
-  className?: string;
-  style?: StringObject;
-  children?: ReactNode;
-  id?: string;
-}
+import { PropsType } from "../util/type";
 
 export default function Plane({
   id,
@@ -35,13 +17,14 @@ export default function Plane({
         ...style,
         width: width,
         height: height,
-        background: color
-          ? `linear-gradient(to bottom right, ${lightenColor(
-              color ?? "#232323",
-              6
-            )}, 7%, ${color ?? "#232323"})`
-          : "",
-        borderRadius: borderRadius ?? "10px",
+        backgroundColor: color ?? "#232323",
+        // background: color
+        //   ? `linear-gradient(to bottom right, ${lightenColor(
+        //       color ?? "#232323",
+        //       6
+        //     )}, 7%, ${color ?? "#232323"})`
+        //   : "",
+        borderRadius: borderRadius ?? "20%",
         boxShadow: `inset 2px 2px 8px rgba(255, 255, 255, 0.3),
           3px 3px 8px rgba(0, 0, 0, 0.1)`,
       }}

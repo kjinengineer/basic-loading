@@ -6,11 +6,11 @@
 
 .top {
   position: absolute;
-  background-image: inherit;
+  background-color: #818cf8;
   width: 10em;
   height: 10em;
   border-top-right-radius: 30%;
-  background: linear-gradient(to bottom, red, 5%, #818cf8);
+  /* background: linear-gradient(to bottom, red, 2%, #818cf8); */
   transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
   box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3);
   /* clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 0%); */
@@ -18,7 +18,81 @@
 
 .right {
   position: absolute;
-  background: linear-gradient(to top right, red, 0%, #818cf8);
+  background-color: #818cf8;
+  /* background: linear-gradient(to bottom, red, 1%, #818cf8); */
+  width: 10em;
+  height: 10em;
+  border-top-right-radius: 30%;
+  transform: rotate(60deg) skewX(-30deg) scale(1, 0.866) translate(50%, 0%);
+  /* clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 100% 0%); */
+  box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0.3);
+}
+
+.mid-left {
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  transform: rotate(-60deg) scale(1, 0.865) translate(-22%, 0%);
+  box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3);
+  /* clip-path: polygon(3% 0%, 3% 100%, 100% 0%, 3% 0%); */
+  clip-path: polygon(20% 0%, 20% 50%, 80% 50%, 80% 0%);
+  background-color: #818cf8;
+  /* background: linear-gradient(to bottom, red, 2%, #818cf8); */
+}
+
+.mid-right {
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  transform: rotate(60deg) scale(1, 0.865) translate(22%, 0%);
+  box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0.3);
+  /* clip-path: polygon(3% 0%, 3% 100%, 100% 0%, 3% 0%); */
+  clip-path: polygon(20% 0%, 20% 50%, 80% 50%, 80% 0%);
+  background-color: #818cf8;
+  /* background-color: black; */
+  /* background: linear-gradient(to bottom, red, 2%, #818cf8); */
+}
+
+.mid-bottom {
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  transform: rotate(0deg) scale(1, 0.865) translate(0%, 50%);
+  box-shadow: inset 0px 2px 8px rgba(255, 255, 255, 0.3);
+  /* clip-path: polygon(3% 0%, 3% 100%, 100% 0%, 3% 0%); */
+  clip-path: polygon(20% 100%, 20% 50%, 80% 50%, 80% 100%);
+  background-color: #818cf8;
+  /* background-color: black; */
+  /* background: linear-gradient(to bottom, red, 2%, #818cf8); */
+}
+
+.top2 {
+  position: absolute;
+  background-image: inherit;
+  width: 10em;
+  height: 10em;
+  border-bottom-left-radius: 30%;
+  background: linear-gradient(to right, red, 2%, #818cf8);
+  transform: rotate(0deg) skewX(-30deg) scale(1, 0.866) translate(0%, 50%);
+  box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3);
+  /* clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 0%); */
+}
+
+.left2 {
+  position: absolute;
+  background: linear-gradient(to right, red, 0%, #818cf8);
+  width: 10em;
+  height: 10em;
+  border-bottom-left-radius: 30%;
+  box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3);
+  /* clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 0%); */
+  transform: rotate(-120deg) skewX(-30deg) scale(1, 0.866) translate(-50%, 0%);
+}
+
+.right2 {
+  position: absolute;
+  background-color: black;
+  /* background: linear-gradient(to bottom, red, 1%, #818cf8); */
   width: 10em;
   height: 10em;
   border-top-right-radius: 30%;
@@ -27,21 +101,47 @@
   box-shadow: inset 2px 0px 8px rgba(255, 255, 255, 0.3);
 }
 
-.mid-left {
+.center2 {
   position: absolute;
+  background-image: inherit;
   width: 10em;
   height: 10em;
-  transform: rotate(-60deg) scale(1, 0.865) translate(-25%, 0%);
-  box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3);
-  /* clip-path: polygon(5% 0%, 5% 100%, 100% 0%, 5% 0%); */
-  clip-path: polygon(20% 0%, 20% 50%, 80% 50%, 80% 0%);
+  border-top-right-radius: 30%;
   background-color: black;
-  background: linear-gradient(to bottom, red, 5%, #818cf8);
+  background: linear-gradient(to bottom, red, 0.5%, #818cf8);
+  transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
+  /* box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3); */
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 0% 0%);
+}
+
+.mid-left2 {
+  position: absolute;
+  background-image: inherit;
+  width: 10em;
+  height: 10em;
+  /* border-bottom-left-radius: 30%; */
+  background: linear-gradient(to right, red, 0.2%, #818cf8);
+  transform: rotate(0deg) skewX(-30deg) scale(1, 0.866) translate(15%, 50%);
+  clip-path: polygon(15% 50%, 15% 100%, 90% 100%, 90% 50%);
+  box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3);
+}
+
+.mid-left-copy {
+  position: absolute;
+  background: linear-gradient(to right, red, 0.5%, #818cf8);
+  width: 10em;
+  height: 10em;
+  /* border-bottom-left-radius: 30%; */
+  box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3);
+  /* clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 0%); */
+  /* clip-path: polygon(20% 0%, 20% 50%, 80% 50%, 80% 0%); */
+  transform: rotate(0deg) skewX(-30deg) scale(1, 0.866) translate(0%, 50%);
 }
 
 .left {
   position: absolute;
-  background: linear-gradient(to right, red, 5%, #818cf8);
+  background-color: #818cf8;
+  /* background: linear-gradient(to right, red, 2%, #818cf8); */
   width: 10em;
   height: 10em;
   border-bottom-left-radius: 30%;
@@ -52,12 +152,13 @@
 
 .center {
   position: absolute;
-  background-image: inherit;
+  background-color: #818cf8;
+  /* background-image: inherit; */
   width: 10em;
   height: 10em;
   border-top-right-radius: 30%;
-  background-color: black;
-  background: linear-gradient(to bottom, red, 5%, #818cf8);
+  /* background-color: black; */
+  /* background: linear-gradient(to bottom, red, 2%, #818cf8); */
   transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
   /* box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3); */
   clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 0% 0%);
@@ -71,21 +172,28 @@
   box-shadow: inset 2px 0px 8px rgba(255, 255, 255, 0.3);
   /* clip-path: polygon(20% 0%, 20% 50%, 80% 50%, 80% 0%); */
   clip-path: polygon(30% 0%, 30% 20%, 60% 20%, 60% 0%);
-  /* clip-path: polygon(5% 0%, 5% 50%, 90% 50%, 90% 0%); */
-  /* background-color: black; */
+  /* clip-path: polygon(3% 0%, 3% 50%, 90% 50%, 90% 0%); */
+  background-color: black;
   /* background: linear-gradient(to bottom right, red, 1%, #818cf8); */
 }
 
 .sample3 {
   position: absolute;
+  background: linear-gradient(to top right, red, 10%, #818cf8);
   width: 10em;
   height: 10em;
-  transform: rotate(180deg) scale(1, 0.865) translate(0%, -50%);
+  transform: rotate(60deg) skewX(-30deg) scale(1, 0.866) translate(-10%, 0%);
+  clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 100% 0%);
+  /* box-shadow: inset 2px 0px 8px rgba(255, 255, 255, 0.3);
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  transform: rotate(60deg) scale(1, 0.865) translate(50%, 0%); */
   /* box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3); */
-  /* clip-path: polygon(5% 0%, 5% 100%, 100% 0%, 5% 0%); */
-  clip-path: polygon(20% 0%, 20% 50%, 80% 50%, 80% 0%);
-  /* background-color: black; */
-  background: linear-gradient(to top left, red, 2%, #818cf8);
+  /* clip-path: polygon(3% 0%, 3% 100%, 100% 0%, 3% 0%); */
+  /* clip-path: polygon(20% 0%, 20% 20%, 60% 20%, 60% 0%);
+  background-color: black; */
+  /* background: linear-gradient(to top, red, 2%, #818cf8); */
 }
 /* 
 #pool-container {
