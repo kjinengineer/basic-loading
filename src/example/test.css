@@ -1,14 +1,24 @@
 .triangle {
-  margin: 100px;
+  width: 150px;
+  height: 150px;
   position: relative;
   filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.1));
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  transform: translate(-25%, -25%);
 }
 
 .top {
   position: absolute;
   background-color: #818cf8;
-  width: 10em;
-  height: 10em;
+  width: calc(100% / 2);
+  height: calc(100% / 2);
   border-top-right-radius: 30%;
   /* background: linear-gradient(to bottom, red, 2%, #818cf8); */
   transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
@@ -20,8 +30,8 @@
   position: absolute;
   background-color: #818cf8;
   /* background: linear-gradient(to bottom, red, 1%, #818cf8); */
-  width: 10em;
-  height: 10em;
+  width: calc(100% / 2);
+  height: calc(100% / 2);
   border-top-right-radius: 30%;
   transform: rotate(60deg) skewX(-30deg) scale(1, 0.866) translate(50%, 0%);
   /* clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 100% 0%); */
@@ -30,8 +40,8 @@
 
 .mid-left {
   position: absolute;
-  width: 10em;
-  height: 10em;
+  width: calc(100% / 2);
+  height: calc(100% / 2);
   transform: rotate(-60deg) scale(1, 0.865) translate(-22%, 0%);
   box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3);
   /* clip-path: polygon(3% 0%, 3% 100%, 100% 0%, 3% 0%); */
@@ -42,8 +52,8 @@
 
 .mid-right {
   position: absolute;
-  width: 10em;
-  height: 10em;
+  width: calc(100% / 2);
+  height: calc(100% / 2);
   transform: rotate(60deg) scale(1, 0.865) translate(22%, 0%);
   box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0.3);
   /* clip-path: polygon(3% 0%, 3% 100%, 100% 0%, 3% 0%); */
@@ -55,8 +65,8 @@
 
 .mid-bottom {
   position: absolute;
-  width: 10em;
-  height: 10em;
+  width: calc(100% / 2);
+  height: calc(100% / 2);
   transform: rotate(0deg) scale(1, 0.865) translate(0%, 50%);
   box-shadow: inset 0px 2px 8px rgba(255, 255, 255, 0.3);
   /* clip-path: polygon(3% 0%, 3% 100%, 100% 0%, 3% 0%); */
@@ -142,8 +152,8 @@
   position: absolute;
   background-color: #818cf8;
   /* background: linear-gradient(to right, red, 2%, #818cf8); */
-  width: 10em;
-  height: 10em;
+  width: calc(100% / 2);
+  height: calc(100% / 2);
   border-bottom-left-radius: 30%;
   box-shadow: inset 2px 2px 8px rgba(255, 255, 255, 0.3);
   clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 0%);
@@ -154,8 +164,8 @@
   position: absolute;
   background-color: #818cf8;
   /* background-image: inherit; */
-  width: 10em;
-  height: 10em;
+  width: calc(100% / 2);
+  height: calc(100% / 2);
   border-top-right-radius: 30%;
   /* background-color: black; */
   /* background: linear-gradient(to bottom, red, 2%, #818cf8); */
