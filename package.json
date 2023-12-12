@@ -1,6 +1,6 @@
 {
   "name": "basic-loading",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -30,8 +30,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "prepare": "mkdir dist && tsc"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
