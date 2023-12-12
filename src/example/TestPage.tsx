@@ -1,18 +1,19 @@
-import { Plane } from "../lib";
-import Triangle from "../lib/component/Triangle";
-import Button from "./Button";
+// import DotBasic from "../lib/component/DotBasic";
+// import DotBounce from "../lib/component/DotBounce";
+// import Fade from "../lib/component/Fade";
+import React from "react";
 
 export default function TestPage() {
-  const option = {
-    width: "100px",
-    height: "100px",
-    // color: "#818cf8",
-  };
+  // const option = {
+  //   size: 15,
+  //   color: "#232323",
+  // };
+
   return (
     <div>
-      {/* <Plane option={option} />
-      <Triangle option={option} /> */}
-      <Button />
+      {/* <DotBasic option={option} /> */}
+      {/* <DotBounce option={option} /> */}
+      {/* <Fade>hello</Fade> */}
     </div>
   );
 }
