@@ -1,1 +1,1 @@
-# animated-illustration
+# basic-loading
