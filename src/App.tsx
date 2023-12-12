@@ -1,4 +1,4 @@
-import TestPage from "./TestPage";
+import TestPage from "./example/TestPage";
 
 function App() {
   return <TestPage />;

@@ -21,7 +21,3 @@ export function lightenColor(hex: string, percent: number) {
 
   return rgbToHex(adjustedRgb);
 }
-
-// 예시
-// const originalColor = "#3c86ec";
-// const lightenedColor = lightenColor(originalColor, 20);
