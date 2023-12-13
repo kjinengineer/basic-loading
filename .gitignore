@@ -22,3 +22,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 dist
+
+# build
+cjs/*
+!cjs/package.json
+!cjs/tsconfig.json
+
+esm/*
+!esm/package.json
+!esm/tsconfig.json

@@ -1,12 +1,12 @@
 {
   "name": "basic-loading",
-  "version": "0.0.4",
-  "main": "./cjs/index.js",
-  "module": "./esm/index.js",
+  "version": "0.0.9",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "exports": {
     ".": {
-      "import": "./esm/index.js",
-      "require": "./cjs/index.js"
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
     }
   },
   "description": "loading",
@@ -28,10 +28,9 @@
     "typescript": "^4.9.5"
   },
   "scripts": {
-    "prepare": "mkdir dist && tsc",
-    "build": "npm run build:cjs & npm run build:esm",
-    "build:cjs": "tsc --p ./cjs/tsconfig.json",
-    "build:esm": "tsc --p ./esm/tsconfig.json"
+    "build": "mkdir dist && npm run build:cjs & npm run build:esm",
+    "build:cjs": "tsc --p ./cjs/tsconfig.json --outDir ./dist/cjs",
+    "build:esm": "tsc --p ./esm/tsconfig.json --outDir ./dist/esm"
   },
   "browserslist": {
     "production": [
