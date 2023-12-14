@@ -15,8 +15,8 @@
     "isolatedModules": true,
     "noEmit": false,
     "jsx": "react-jsx",
-    "declaration": true,
-    "outDir": "./dist"
+    "declaration": true
+    // "outDir": "./dist"
   },
   "include": ["src/**/*.tsx", "src/**/*.ts"]
 }
