@@ -3,6 +3,6 @@ src/
 public/
 tsconfig.json
 package-lock.json
-cjs/
-esm/
+# cjs/
+# esm/
 .github/
