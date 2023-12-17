@@ -8,10 +8,13 @@ interface Datatype {
 
 export default function ProgressBar({ option }: Datatype) {
   const { width, bgColor, barColor } = option;
+  // const width = 300;
   const height = width * 0.1;
   const afterWidth = width * 0.95;
   const afterHeight = height * 0.5;
   const margin = width * 0.025;
+  // const bgColor = "#e0e0e0";
+  // const barColor = "#b3b3b3";
   const animation = `
     @keyframes progressbar {
       0% {
