@@ -24,10 +24,13 @@
   "dependencies": {
     "@types/node": "^16.18.65",
     "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.18",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^4.9.5"
   },
   "scripts": {
+    "start": "react-scripts start",
     "build": "mkdir dist && npm run build:cjs & npm run build:esm",
     "build:cjs": "tsc --p ./cjs/tsconfig.json --outDir ./dist/cjs",
     "build:esm": "tsc --p ./esm/tsconfig.json --outDir ./dist/esm"
@@ -43,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
   }
 }
