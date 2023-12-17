@@ -5,18 +5,19 @@ interface Datatype {
   };
 }
 
-export default function DotBasic({ option }: Datatype) {
+export default function BounceDot({ option }: Datatype) {
   const { size, color } = option;
   const delayList = [0, 0.25, 0.5];
-
   const keyframe = ` 
-          @keyframes loading {
+          @keyframes bounce {
             0%, 
             100% {
-              opacity: 0.5;
+              opacity: 1;
+              transform: scale(1); 
             }
             50% {
-              opacity: 1;
+              opacity: 0.3;
+              transform: scale(0.5);
             }
           }
           `;
@@ -27,15 +28,14 @@ export default function DotBasic({ option }: Datatype) {
       <div style={{ display: "flex" }}>
         {delayList.map((delay, i) => (
           <div
-            key={i}
             style={{
               width: size,
               height: size,
               borderRadius: "50%",
               backgroundColor: color,
-              animation: `loading 1s ease-in-out infinite`,
+              animation: `bounce 1s ease-in-out infinite`,
               animationDelay: `${delay}s`,
-              margin: size / 2.5,
+              margin: size / 3.5,
             }}
           ></div>
         ))}
