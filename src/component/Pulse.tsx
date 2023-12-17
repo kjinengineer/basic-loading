@@ -1,30 +1,65 @@
-export default function Pulse() {
+interface Datatype {
+  option: {
+    size: number;
+    color: string;
+  };
+  children?: React.ReactNode;
+}
+
+export default function Pulse({ option, children }: Datatype) {
+  const { size, color } = option;
+  const animation = `
+  @keyframes pulse {
+    0% {
+      scale: 1;
+      opacity: 0.5;
+    }
+    100% {
+      scale: 1.8;
+      opacity: 0;
+    }
+  }
+`;
   return (
-    <div
-      className="relative"
-      style={{
-        width: "150px",
-        height: "150px",
-      }}
-    >
+    <>
+      <style>{animation}</style>
       <div
         style={{
-          width: "150px",
-          height: "150px",
-          border: "solid",
-          borderWidth: "2px",
-          borderRadius: "50%",
+          position: "relative",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: size,
+          height: size,
         }}
-        className="pulse"
-      ></div>
-      {/* <div
+      >
+        <div
           style={{
-            width: "150px",
-            height: "150px",
+            position: "absolute",
+            width: size,
+            height: size,
+            borderRadius: "50%",
+            animation: "pulse 1.5s ease-in-out infinite",
+            backgroundColor: color,
+          }}
+        ></div>
+        <div
+          style={{
+            zIndex: 10,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: size,
+            height: size,
+            top: "50%",
+            left: "50%",
+            borderRadius: "50%",
+            backgroundColor: color,
           }}
         >
-          <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[30px] h-[30px] bg-black rounded-full"></div>
-        </div> */}
-    </div>
+          {children}
+        </div>
+      </div>
+    </>
   );
 }
