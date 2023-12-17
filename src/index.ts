@@ -1,3 +1,3 @@
-export { default as DotBasic } from "./component/DotBasic";
-export { default as DotBounce } from "./component/DotBounce";
+export { default as DotBasic } from "./component/BasicDot";
+export { default as DotBounce } from "./component/BounceDot";
 export { default as Fade } from "./component/Fade";
