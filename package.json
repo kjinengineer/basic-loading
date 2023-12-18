@@ -1,6 +1,7 @@
 {
   "name": "basic-loading",
-  "version": "0.0.12",
+  "version": "0.0.18",
+  "private": false,
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "exports": {
@@ -35,6 +36,9 @@
     "build:cjs": "tsc --p ./cjs/tsconfig.json --outDir ./dist/cjs",
     "build:esm": "tsc --p ./esm/tsconfig.json --outDir ./dist/esm"
   },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -46,8 +50,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "react-scripts": "^5.0.1"
   }
 }
