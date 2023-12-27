@@ -7,7 +7,7 @@ interface Datatype {
     width: string;
     height: string;
     speed: number;
-    color: [string, string];
+    color: string[];
     borderRadius?: string;
   };
   className?: string;
