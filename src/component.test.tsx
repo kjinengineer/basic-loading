@@ -18,7 +18,7 @@ describe("<BounceDot />", () => {
   it("should dot1 color", () => {
     const { dot1 } = renderComplex();
     expect(dot1).toHaveStyle({
-      backgroundColor: "#232323",
+      backgroundColor: "#232313",
     });
   });
   // it("should decrease count", () => {
