@@ -32,12 +32,22 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "test": "jest",
     "build": "mkdir dist && npm run build:cjs & npm run build:esm",
     "build:cjs": "tsc --p ./cjs/tsconfig.json --outDir ./dist/cjs",
     "build:esm": "tsc --p ./esm/tsconfig.json --outDir ./dist/esm"
   },
   "devDependencies": {
-    "react-scripts": "^5.0.1"
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/jest": "^29.5.11",
+    "babel-jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "react-scripts": "^5.0.1",
+    "ts-jest": "^29.1.1"
   },
   "browserslist": {
     "production": [
