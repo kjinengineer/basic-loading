@@ -1,12 +1,15 @@
 interface Datatype {
-  option: {
-    size: number;
-    color: string;
+  option?: {
+    size?: number;
+    color?: string;
   };
 }
 
-export default function BounceDot({ option }: Datatype) {
-  const { size, color } = option;
+const BounceDot = ({ option }: Datatype) => {
+  // const { size, color } = option;
+  const size = option?.size || 15;
+  const color = option?.color || "#232323";
+
   const animation = ` 
         @keyframes loading {
           0%, 
@@ -26,6 +29,7 @@ export default function BounceDot({ option }: Datatype) {
       <style>{animation}</style>
       <div style={{ display: "flex" }}>
         <div
+          data-testid="dot1"
           style={{
             width: size,
             height: size,
@@ -37,6 +41,7 @@ export default function BounceDot({ option }: Datatype) {
           }}
         ></div>
         <div
+          data-testid="dot2"
           style={{
             width: size,
             height: size,
@@ -48,6 +53,7 @@ export default function BounceDot({ option }: Datatype) {
           }}
         ></div>
         <div
+          data-testid="dot3"
           style={{
             width: size,
             height: size,
@@ -61,4 +67,5 @@ export default function BounceDot({ option }: Datatype) {
       </div>
     </>
   );
-}
+};
+export default BounceDot;
