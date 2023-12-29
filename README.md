@@ -3,7 +3,7 @@
 <br />
 
 <div align="center">
-<img src="./public/logo.png" width="200" />
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FRr526%2FbtsCTuvkiDd%2F1ZBz5d07tub0bKKnAOSlw0%2Fimg.png" width="200" />
 </div>
 
 <br />
@@ -42,7 +42,7 @@ This library was developed using the following development stacks:
 
 - **Language:** TypeScript
 - **Testing Framework:** Jest, React Testing Library
-- **Package Management:** Yarn Berry
+- **Package Management:** Yarn Berry (Zero Install)
 - **Continuous Integration/Deployment:** GitHub Actions
 - **Version Control:** Git
 
