@@ -1,4 +1,4 @@
-# BASIC-LOADING <img src="https://img.shields.io/badge/version-1.0.5-blue" />
+# BASIC-LOADING <img src="https://img.shields.io/badge/version-2.0.1-blue" />
 
 <br />
 
@@ -42,7 +42,7 @@ This library was developed using the following development stacks:
 
 - **Language:** TypeScript
 - **Testing Framework:** Jest, React Testing Library
-- **Package Management:** Yarn Berry (Zero Install)
+- **Package Management:** NPM
 - **Continuous Integration/Deployment:** GitHub Actions
 - **Version Control:** Git
 
