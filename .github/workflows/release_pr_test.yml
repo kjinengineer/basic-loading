@@ -1,10 +1,6 @@
-name: PR Test
+name: Run Test Code
 
 on:
-  # workflow_dispatch:
-  # push:
-  #   branches:
-  #     - release
   pull_request:
     branches:
       - release
@@ -12,12 +8,9 @@ on:
 jobs:
   Run-Jest:
     runs-on: [ubuntu-latest]
-    # strategy:
-    #   matrix:
-    #     node-version: [20.x]
     steps:
       - uses: actions/checkout@v2
-      - name: Setting Dependencies
-        run: yarn release
+      - name: Setting
+        run: npm install
       - name: run test code
-        run: yarn test
+        run: npm run test
