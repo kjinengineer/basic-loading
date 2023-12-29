@@ -31,3 +31,13 @@ cjs/*
 esm/*
 !esm/package.json
 !esm/tsconfig.json
+
+
+# yarn berry
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
