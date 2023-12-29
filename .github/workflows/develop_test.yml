@@ -7,7 +7,7 @@ on:
       - develop
 
 jobs:
-  Publish:
+  Publish-Test:
     runs-on: ubuntu-latest
     permissions:
       contents: write
