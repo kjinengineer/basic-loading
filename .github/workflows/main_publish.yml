@@ -27,8 +27,8 @@ jobs:
       - run: git config --local user.email "${{secrets.USER_EMAIL}}"
       - run: npm install
       - run: npm run build
-      # - run: git status
-      # - run: git restore .
+      - run: git status
+      - run: git restore .
       - run: npm version patch
       - run: npm publish
         env:
