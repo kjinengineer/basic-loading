@@ -1,6 +1,6 @@
 {
   "name": "basic-loading",
-  "version": "1.0.3",
+  "version": "1.0.12",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "exports": {
@@ -31,7 +31,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "release": "yarn add react-scripts jest @types/jest @babel/core @babel/preset-env --dev",
+    "release": "npm install react-scripts jest @types/jest @babel/core @babel/preset-env --dev",
     "test": "jest",
     "build": "mkdir dist && npm run build:cjs & npm run build:esm",
     "build:cjs": "tsc --p ./cjs/tsconfig.json --outDir ./dist/cjs",

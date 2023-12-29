@@ -1,9 +1,9 @@
-name: Run Test Code
+name: TestCode Test
 
 on:
-  pull_request:
+  push:
     branches:
-      - release
+      - develop
 
 jobs:
   Run-Jest:
@@ -12,5 +12,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Setting
         run: npm install
-      - name: run test code
+      - name: Run Test Code
         run: npm run test

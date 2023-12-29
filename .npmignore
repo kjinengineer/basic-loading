@@ -7,3 +7,11 @@ cjs/
 esm/
 .github/
 test/
+.vscode/
+.yarn/
+.pnp.cjs
+.pnp.loader.mjs
+.yarnrc.yml
+babel.config.js
+jest.config.js
+jest.setup.js
