@@ -21,7 +21,7 @@ jobs:
       - run: git config --local user.name "${{secrets.USER_NAME}}"
       - run: git config --local user.email "${{secrets.USER_EMAIL}}"
       #   - name: Setting Dependencies
-      - run: yarn build:test
+      - run: yarn install
       - run: yarn build
       #   - run: yarn release
       #   - run: npm install
