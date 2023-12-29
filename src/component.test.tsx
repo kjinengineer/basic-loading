@@ -21,15 +21,4 @@ describe("<BounceDot />", () => {
       backgroundColor: "#232323",
     });
   });
-  // it("should decrease count", () => {
-  //   const { decreaseBtn, count } = renderComplex();
-  //   fireEvent.click(decreaseBtn);
-  //   expect(count.textContent).toBe("-1");
-  // });
-  // it("should same count", () => {
-  //   const { increaseBtn, decreaseBtn, count } = renderComplex();
-  //   fireEvent.click(increaseBtn);
-  //   fireEvent.click(decreaseBtn);
-  //   expect(count.textContent).toBe("0");
-  // });
 });

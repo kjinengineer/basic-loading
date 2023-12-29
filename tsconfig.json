@@ -18,6 +18,6 @@
     "jsx": "react-jsx",
     "declaration": true
   },
-  // "include": ["./src/lib/**/*.tsx", "./src/lib/**/*.ts"]
-  "include": ["./src"]
+  "include": ["./src/lib/**/*.tsx", "./src/lib/**/*.ts"]
+  // "include": ["./src"]
 }
