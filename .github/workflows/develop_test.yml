@@ -24,8 +24,8 @@ jobs:
       - run: yarn build
       #   - run: npm install
       #   - run: npm run build
-      - run: git status
-      - run: git restore .
+      # - run: git status
+      # - run: git restore .
       #   - run: yarn version --patch
       - run: yarn publish
         env:
