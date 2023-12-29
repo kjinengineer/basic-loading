@@ -20,8 +20,9 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: git config --local user.name "${{secrets.USER_NAME}}"
       - run: git config --local user.email "${{secrets.USER_EMAIL}}"
-      - name: Setting Dependencies
-        run: yarn release
+      #   - name: Setting Dependencies
+      - run: yarn build:test
+      - run: yarn release
       #   - run: npm install
       #   - run: npm run build
       #   - run: git status

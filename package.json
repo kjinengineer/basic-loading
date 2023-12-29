@@ -32,6 +32,7 @@
   "scripts": {
     "start": "react-scripts start",
     "release": "yarn add react-scripts jest @types/jest @babel/core @babel/preset-env --dev",
+    "build:test": "npm i yarn",
     "test": "jest",
     "build": "mkdir dist && npm run build:cjs & npm run build:esm",
     "build:cjs": "tsc --p ./cjs/tsconfig.json --outDir ./dist/cjs",
