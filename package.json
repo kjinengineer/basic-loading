@@ -31,9 +31,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "release": "yarn add react-scripts jest @types/jest @babel/core @babel/preset-env --dev",
+    "release": "npm install react-scripts jest @types/jest @babel/core @babel/preset-env --dev",
     "test": "jest",
-    "build:dev": "npm i yarn",
     "build": "mkdir dist && npm run build:cjs & npm run build:esm",
     "build:cjs": "tsc --p ./cjs/tsconfig.json --outDir ./dist/cjs",
     "build:esm": "tsc --p ./esm/tsconfig.json --outDir ./dist/esm"
