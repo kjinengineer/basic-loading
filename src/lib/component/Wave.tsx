@@ -1,14 +1,16 @@
 interface Datatype {
   option: {
-    height: number;
-    color: string;
+    size: number;
+    color?: string;
   };
 }
 
 export default function Wave({ option }: Datatype) {
-  const { height, color } = option;
-  const width = height * 0.15;
-  const margin = height * 0.1;
+  const { size } = option;
+  const color = option.color || "#0271a1";
+
+  const width = size * 0.15;
+  const margin = size * 0.1;
   const animation = `
   @keyframes wave {
     0%, 100%{
@@ -26,7 +28,7 @@ export default function Wave({ option }: Datatype) {
         <div
           style={{
             width: width,
-            height: height,
+            height: size,
             backgroundColor: color,
             margin: margin,
             animation: "wave 1.2s linear infinite",
@@ -35,7 +37,7 @@ export default function Wave({ option }: Datatype) {
         <div
           style={{
             width: width,
-            height: height,
+            height: size,
             backgroundColor: color,
             margin: margin,
             animation: "wave 1.2s 0.3s linear infinite",
@@ -44,7 +46,7 @@ export default function Wave({ option }: Datatype) {
         <div
           style={{
             width: width,
-            height: height,
+            height: size,
             backgroundColor: color,
             margin: margin,
             animation: "wave 1.2s 0.6s linear infinite",
@@ -53,7 +55,7 @@ export default function Wave({ option }: Datatype) {
         <div
           style={{
             width: width,
-            height: height,
+            height: size,
             backgroundColor: color,
             margin: margin,
             animation: "wave 1.2s 0.9s linear infinite",
@@ -62,7 +64,7 @@ export default function Wave({ option }: Datatype) {
         <div
           style={{
             width: width,
-            height: height,
+            height: size,
             backgroundColor: color,
             margin: margin,
             animation: "wave 1.2s 1.2s linear infinite",

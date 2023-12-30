@@ -1,13 +1,14 @@
 interface Datatype {
   option: {
     size: number;
-    color: string;
+    color?: string;
   };
   children?: React.ReactNode;
 }
 
 export default function Pulse({ option, children }: Datatype) {
-  const { size, color } = option;
+  const { size } = option;
+  const color = option.color || "#84B4D4";
   const animation = `
   @keyframes pulse {
     0% {

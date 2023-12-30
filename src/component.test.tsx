@@ -1,13 +1,16 @@
 /**
  * @jest-environment jsdom
  */
-
 import React from "react";
-import { fireEvent, render } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { BounceDot } from "./lib";
 
 const renderComplex = () => {
-  const { getByTestId } = render(<BounceDot />);
+  const option = {
+    size: 12,
+    // color: "blue",
+  };
+  const { getByTestId } = render(<BounceDot option={option} />);
   const dot1 = getByTestId("dot1");
   const dot2 = getByTestId("dot2");
   const dot3 = getByTestId("dot3");
@@ -18,7 +21,7 @@ describe("<BounceDot />", () => {
   it("should dot1 color", () => {
     const { dot1 } = renderComplex();
     expect(dot1).toHaveStyle({
-      backgroundColor: "#232323",
+      backgroundColor: "#0271a1",
     });
   });
 });

@@ -1,12 +1,13 @@
 interface Datatype {
   option: {
     size: number;
-    color: string;
+    color?: string;
   };
 }
 
 export default function BasicDot({ option }: Datatype) {
-  const { size, color } = option;
+  const { size } = option;
+  const color = option.color || "#0271a1";
   const animation = ` 
   @keyframes loading {
     0%, 
