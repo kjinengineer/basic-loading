@@ -1,13 +1,14 @@
 interface Datatype {
   option: {
     width: number;
+    speed: number;
     bgColor?: string;
     barColor?: string;
   };
 }
 
 export default function ProgressBar({ option }: Datatype) {
-  const { width } = option;
+  const { width, speed } = option;
   const height = width * 0.1;
   const afterWidth = width * 0.95;
   const afterHeight = height * 0.5;
@@ -46,7 +47,7 @@ export default function ProgressBar({ option }: Datatype) {
             marginLeft: margin,
             width: afterWidth,
             height: afterHeight,
-            animation: "progressbar 3s linear",
+            animation: `progressbar ${speed}s linear`,
           }}
         ></div>
       </div>

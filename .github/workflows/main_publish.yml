@@ -7,9 +7,9 @@ on:
     #     - 'v*'
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+  # pull_request:
+  #   branches:
+  #     - main
 
 jobs:
   Publish:
