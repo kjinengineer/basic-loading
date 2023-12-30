@@ -1,15 +1,19 @@
 interface Datatype {
   option: {
     size: number;
-    bgColor: string;
-    barColor: string;
-    thickness: number;
+    bgColor?: string;
+    barColor?: string;
+    thickness?: number;
   };
   children?: React.ReactNode;
 }
 
 export default function Spinner({ option, children }: Datatype) {
-  const { size, bgColor, barColor, thickness } = option;
+  const { size } = option;
+  const bgColor = option.bgColor || "#0271a1";
+  const barColor = option.barColor || "#BAD5E8";
+  const thickness = option.thickness || 7;
+
   const animation = `
     @keyframes spin {
       from{
