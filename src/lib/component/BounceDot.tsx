@@ -1,14 +1,13 @@
 interface Datatype {
-  option?: {
-    size?: number;
+  option: {
+    size: number;
     color?: string;
   };
 }
 
 const BounceDot = ({ option }: Datatype) => {
-  // const { size, color } = option;
-  const size = option?.size || 15;
-  const color = option?.color || "#232323";
+  const { size } = option;
+  const color = option.color || "#0271a1";
 
   const animation = ` 
         @keyframes loading {

@@ -1,6 +1,6 @@
 {
   "name": "basic-loading",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "exports": {
@@ -62,6 +62,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "packageManager": "yarn@4.0.2"
+  }
 }

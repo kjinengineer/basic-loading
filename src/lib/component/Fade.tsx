@@ -1,9 +1,12 @@
 interface Datatype {
-  speed?: number;
+  option: {
+    speed: number;
+  };
+
   children?: React.ReactNode;
 }
 
-export default function Fade({ speed, children }: Datatype) {
+export default function Fade({ option, children }: Datatype) {
   const animation = `
       @keyframes fade {
         0%, 100% {
@@ -20,7 +23,7 @@ export default function Fade({ speed, children }: Datatype) {
       <style>{animation}</style>
       <div
         style={{
-          animation: `fade ${speed || 1.5}s ease-in-out infinite`,
+          animation: `fade ${option.speed || 1.5}s ease-in-out infinite`,
         }}
       >
         {children}
