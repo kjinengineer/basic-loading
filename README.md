@@ -1,4 +1,4 @@
-# BASIC-LOADING <img src="https://img.shields.io/badge/version-1.0.5-blue" />
+# BASIC-LOADING <img src="https://img.shields.io/badge/version-2.0.2-blue" />
 
 <br />
 
