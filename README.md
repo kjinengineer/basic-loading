@@ -42,7 +42,7 @@ This library was developed using the following development stacks:
 
 - **Language:** TypeScript
 - **Testing Framework:** Jest, React Testing Library
-- **Package Management:** Yarn Berry (Zero Install)
+- **Package Management:** NPM
 - **Continuous Integration/Deployment:** GitHub Actions
 - **Version Control:** Git
 
