@@ -3,14 +3,14 @@
  */
 import React from "react";
 import { render } from "@testing-library/react";
-import { BounceDot } from "./lib";
+import TestComponent from "./TestComponent";
 
 const renderComplex = () => {
   const option = {
     size: 12,
     // color: "blue",
   };
-  const { getByTestId } = render(<BounceDot option={option} />);
+  const { getByTestId } = render(<TestComponent option={option} />);
   const dot1 = getByTestId("dot1");
   const dot2 = getByTestId("dot2");
   const dot3 = getByTestId("dot3");

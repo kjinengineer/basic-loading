@@ -5,30 +5,30 @@ interface Datatype {
   };
 }
 
-const BounceDot = ({ option }: Datatype) => {
+const TestComponent = ({ option }: Datatype) => {
   const { size } = option;
   const color = option.color || "#0271a1";
 
   const animation = ` 
-        @keyframes loading {
-          0%, 
-          100% {
-            opacity: 1;
-            transform: scale(1); 
+          @keyframes loading {
+            0%, 
+            100% {
+              opacity: 1;
+              transform: scale(1); 
+            }
+            50% {
+              opacity: 0.3;
+              transform: scale(0.5);
+            }
           }
-          50% {
-            opacity: 0.3;
-            transform: scale(0.5);
-          }
-        }
-        `;
+          `;
 
   return (
     <>
       <style>{animation}</style>
       <div style={{ display: "flex" }}>
         <div
-          // data-testid="dot1"
+          data-testid="dot1"
           style={{
             width: size,
             height: size,
@@ -40,7 +40,7 @@ const BounceDot = ({ option }: Datatype) => {
           }}
         ></div>
         <div
-          // data-testid="dot2"
+          data-testid="dot2"
           style={{
             width: size,
             height: size,
@@ -52,7 +52,7 @@ const BounceDot = ({ option }: Datatype) => {
           }}
         ></div>
         <div
-          // data-testid="dot3"
+          data-testid="dot3"
           style={{
             width: size,
             height: size,
@@ -67,4 +67,4 @@ const BounceDot = ({ option }: Datatype) => {
     </>
   );
 };
-export default BounceDot;
+export default TestComponent;
