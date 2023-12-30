@@ -28,7 +28,7 @@ const BounceDot = ({ option }: Datatype) => {
       <style>{animation}</style>
       <div style={{ display: "flex" }}>
         <div
-          data-testid="dot1"
+          // data-testid="dot1"
           style={{
             width: size,
             height: size,
@@ -40,7 +40,7 @@ const BounceDot = ({ option }: Datatype) => {
           }}
         ></div>
         <div
-          data-testid="dot2"
+          // data-testid="dot2"
           style={{
             width: size,
             height: size,
@@ -52,7 +52,7 @@ const BounceDot = ({ option }: Datatype) => {
           }}
         ></div>
         <div
-          data-testid="dot3"
+          // data-testid="dot3"
           style={{
             width: size,
             height: size,
