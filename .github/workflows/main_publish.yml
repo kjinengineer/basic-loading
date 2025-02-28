@@ -3,13 +3,8 @@ name: Package Publish
 on:
   workflow_dispatch:
   push:
-    # tags:
-    #     - 'v*'
     branches:
       - main
-  # pull_request:
-  #   branches:
-  #     - main
 
 jobs:
   Publish:
@@ -29,12 +24,6 @@ jobs:
       - run: npm run build
       - run: git status
       - run: git restore .
-      - run: npm version patch
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-
-      # - name: Push commit
-      #   uses: ad-m/github-push-action@master
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}

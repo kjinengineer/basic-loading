@@ -12,9 +12,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "mkdir dist && npm run build:cjs & npm run build:esm",
-    "build:cjs": "tsc --p ./cjs/tsconfig.json --outDir ./dist/cjs",
-    "build:esm": "tsc --p ./esm/tsconfig.json --outDir ./dist/esm"
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "tsc --p ./config/cjs/tsconfig.json --outDir ./dist/cjs",
+    "build:esm": "tsc --p ./config/esm/tsconfig.json --outDir ./dist/esm"
   },
   "dependencies": {
     "@types/node": "^16.18.65",
