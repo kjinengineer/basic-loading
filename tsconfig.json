@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "types": ["node", "jest", "@testing-library/jest-dom"],
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["node"],
+    "lib": ["dom", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -19,5 +19,4 @@
     "declaration": true
   },
   "include": ["./src/lib/**/*.tsx", "./src/lib/**/*.ts"]
-  // "include": ["./src"]
 }

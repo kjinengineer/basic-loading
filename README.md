@@ -1,4 +1,4 @@
-# BASIC-LOADING <img src="https://img.shields.io/badge/version-2.0.2-blue" />
+# BASIC LOADING <img src="https://img.shields.io/badge/version-2.1.-blue" />
 
 <br />
 
@@ -8,7 +8,7 @@
 
 <br />
 
-**BASIC-LOADING** is a library that provide loading UI components for React and Next.js. You can customize the option values to use it the way you want. Make effective loading page with BASIC-LOADING!
+**BASIC LOADING** is a library that provide loading UI components for React and Next.js. You can customize the option values to use it the way you want. Make effective loading page with BASIC-LOADING!
 
 <br />
 
