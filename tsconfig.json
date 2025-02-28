@@ -19,5 +19,4 @@
     "declaration": true
   },
   "include": ["./src/lib/**/*.tsx", "./src/lib/**/*.ts"]
-  // "include": ["./src"]
 }
