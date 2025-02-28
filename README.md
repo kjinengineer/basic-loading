@@ -1,4 +1,4 @@
-# BASIC LOADING <img src="https://img.shields.io/badge/version-2.1.-blue" />
+# Basic Loading <img src="https://img.shields.io/badge/version-2.1.2-blue" />
 
 <br />
 
@@ -8,7 +8,7 @@
 
 <br />
 
-**BASIC LOADING** is a library that provide loading UI components for React and Next.js. You can customize the option values to use it the way you want. Make effective loading page with BASIC-LOADING!
+**Basic Loading** is a library that provide loading UI components for React and Next.js. You can customize the option values to use it the way you want. Make effective loading page with BASIC-LOADING!
 
 <br />
 
@@ -31,23 +31,10 @@ yarn add basic-loading
 ## Documentation
 
 - It supports TypeScript, and also both CommonJS (cjs) and ECMAScript Modules (esm) environments.
-- Check how to customize options for using components on documentation.
-- Documentation: https://basic-loading-docs.vercel.app
-
-<br />
-
-## Development Stacks
-
-This library was developed using the following development stacks:
-
-- **Language:** TypeScript
-- **Testing Framework:** Jest, React Testing Library
-- **Package Management:** NPM
-- **Continuous Integration/Deployment:** GitHub Actions
-- **Version Control:** Git
+- Check how to customize options for using components on [documentation](https://basicloading.vercel.app/).
 
 <br />
 
 ## License
 
-BASIC-LOADING is MIT Licensed.
+Basic Loading is MIT Licensed.
