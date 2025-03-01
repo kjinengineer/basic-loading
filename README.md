@@ -39,6 +39,8 @@ yarn add basic-loading
 
 If you have any idea about new loading components, please let me know on Issues.
 
+<br />
+
 ## License
 
 Basic Loading is MIT Licensed.
